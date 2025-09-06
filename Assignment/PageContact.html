@@ -11,7 +11,8 @@
 <body>
 
     <header>
-        <h1>Apopo</h1>
+        <img src=Assignment/Assets/APOPO_Banner-Whiskers.jpg width="100%">
+        <h1>Apopo - Tuberculosis testing: Learn more or donate</h1>
         <nav>
         <a href="Landing.html">Home</a>
         <a href="PageAbout.html">About</a>
@@ -19,24 +20,50 @@
         </nav>
     </header>
 
+    <form id="contactForm">
+        <!--For spacing, an alternative to p-aragraph may be:  <div class="UserName"> </div>  -->
+        <p>
+            <label for="Name">Name: </label>
+            <input type="text" id="Name" name="User" placeholder="Enter your name" required>
+        </p>
 
+        <p>
+            <label for="messageBox">Message (250-character limit):  </label>
+                <textarea for="messageBox" 
+                    maxlength="250" 
+                    placeholder="Optional - ask questions or request info to donate.">
+                </textarea>
+                <!--Required attributes for data quality and first cybersecurity method-->
+        </p>
 
+        <p>
+            <label for="email">Your email (optional - Enter if you would like a response):  
+            </label>    
+                <input 
+                type="email" 
+                id="email" 
+                name="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                />
+            <!--Not required, in case they don't want a response-->
+        </p>
 
-
-    
-    <form id="Contact">
-
+        <p>
+            <!--A label is not needed for submit button, but can be used for accessibility-->
+            <input type="submit"/>
+        <!--Alternative to "submit":  <input type="button">  -->
+        </p>
     </form>
 
+            <img src="Assignment/Assets/APOPO_TB_testing.jpg" alt="Cheek-pouched rat sniffs and indicates TB (presence or absence) for a food treat.">
 
-
-
-        <footer>
+    <footer>
         <div class="footer-content">
             <span>© 2025 - Apopo</span>
             <span>website by MegaMoon</span>
         </div>
-        </footer>
+    </footer>
 
     <script src="Script_Function.js">
     </script>
