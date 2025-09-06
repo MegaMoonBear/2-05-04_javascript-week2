@@ -1,0 +1,31 @@
+/* Use a grid or flex [layout](https://github.com/CodeCrew-CodeSchool/css-intro/tree/DJ's-Class)  */
+
+/*  Using universal selector (*) sets styling for whole page, BUT using body usually preferred for text  */
+    /* Asterisk also targets non-text elements, so has performance implications on large pages */ 
+/*  Verdana for maximum compatibility across all devices & browsers (vs. match modern Windows, Segoe UI)  */
+* {
+  font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+  color: midnightblue;
+  background-color: blanchedalmond;
+}
+
+/* Use flex for simple vertical or horizontal layouts, and grid for more complex arrangements. */
+body {
+  display: flex;
+  flex-direction: column; /* stacks children vertically */
+  min-height: 100vh;      /* full viewport height */
+}
+
+    header, nav, footer {
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    color: midnightblue;
+    background-color: blanchedalmond;
+    }
+
+            .footer-content {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+            color: midnightblue;
+            background-color: blanchedalmond;
+            }
